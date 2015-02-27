@@ -117,5 +117,5 @@ app.get('/chart', function (req, res) {
 
 
 var server=app.listen(config.get('server.port'),function(){
-  console.log('imagegraph running on port ' + config.get('server.port'));
+  console.log('image-chart running on port ' + config.get('server.port'));
 });

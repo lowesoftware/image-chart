@@ -1,16 +1,19 @@
 {
-  "name": "imagegraph",
+  "name": "image-chart",
   "version": "0.0.1",
-  "description": "Generate image gaphs using C3 wrapper of D3 and node.",
+  "description": "Generate image gaphs from a URL querystring. A replacement for Google Image Charts.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "graph",
+    "chart",
     "image",
-    "c3",
-    "d3"
+    "c3.js",
+    "d3",
+    "google image chart",
+    "image chart"
   ],
   "author": "Alexander Lowe",
   "license": "MIT",
