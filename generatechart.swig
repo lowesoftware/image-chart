@@ -32,9 +32,6 @@
 
 	chartConfig.bindto = '#chart';
 	chartConfig.onrendered = function () { window.callPhantom('takeShot'); };
-	chartConfig.padding = {
-		right:20
-	};
 
 	var chart = c3.generate(chartConfig);
 

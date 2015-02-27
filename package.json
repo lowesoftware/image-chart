@@ -17,6 +17,10 @@
   ],
   "author": "Alexander Lowe",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lowesoftware/image-chart.git"
+  },
   "dependencies": {
     "c3": "^0.4.9",
     "config": "^1.12.0",
