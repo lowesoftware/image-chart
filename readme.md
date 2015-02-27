@@ -56,14 +56,14 @@ How It Works
 
 When the chart method is called, the basic flow is:
 
-1. Generate a chartKey based on an md5 of the querystring
-1. If the chartKey exists in redis then reset the cache expiration and serve the cached image, and stop here
-1. If the chartKey does not exist in redis...
-1. Configure an object to pass to a swig template that will generate the d3 chart
-1. Render the [swig](http://paularmstrong.github.io/swig/) template
-1. Use [webshot](https://www.npmjs.com/package/webshot) to pass the rendered html to [PhantomJS](http://phantomjs.org/)
-1. Stream the image data to the express response object and to the redis cache
-1. Set the expiration of the chart in redis
+1. Generate a key based on an [md5](https://www.npmjs.com/package/crypto) of the querystring.
+1. If the key exists in redis then reset the cache expiration, stream the cached image to the client, and stop here.
+1. If the key does not exist in redis...
+1. Configure an object to pass to a swig template that will generate the d3 chart.
+1. Render the [swig](http://paularmstrong.github.io/swig/) template.
+1. Use [webshot](https://www.npmjs.com/package/webshot) to pass the rendered html to [PhantomJS](http://phantomjs.org/).
+1. Stream the image data to the express response and to the redis cache.
+1. Set the expiration of the chart in redis.
 
 
 License
