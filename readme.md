@@ -43,11 +43,12 @@ Charts are configured by setting querystring parameters. Available querystring p
 
 Parameter  | Description
 ------------- | -------------
-bg  | 'default: fff'. Optional. A hex value to set as the background color of the chart.
-width  | 'default: 800'. Optional. The width, in pixels of the chart image.
-height | 'default: 300'. Optional. The height, in pixels of the chart image.
+bg  | `default: fff`. Optional. A hex value to set as the background color of the chart.
+width  | `default: 800`. Optional. The width, in pixels of the chart image.
+height | `default: 300`. Optional. The height, in pixels of the chart image.
 config | Required. This is a stringified JSON object that will be passed to the C3 chart _generate_ method. For information on how to generate C3 charts see the [Getting Started](http://c3js.org/gettingstarted.html), [Examples](http://c3js.org/examples.html), and [Reference](http://c3js.org/reference.html).
-token | 'See config\defaut.json to enable and set'. Not required by default, when enabled this is the api authentication token required to generate a chart.
+token | `See config\defaut.json to enable and set`. Not required by default, when enabled this is the api authentication token required to generate a chart.
+
 
 
 How It Works
