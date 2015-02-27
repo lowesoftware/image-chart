@@ -1,0 +1,22 @@
+{
+	"server": {
+		"port": 3200
+	},
+	"redis": {
+		"host": "localhost",
+		"port": "6379",
+		"database": "0"
+	},
+	"cache": {
+		"enabled": true, //use redis to cache image data
+		"expires": 7200 // Time in minutes
+	},
+	"image": {
+		"format": "png", // jpeg or png
+		"quality": 75	// only used for jpeg format
+	},
+	"auth": {
+		"enabled": false,
+		"token": "SuperPrivateTokenGoesHere"
+	}
+}
