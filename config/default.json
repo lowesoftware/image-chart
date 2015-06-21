@@ -13,7 +13,8 @@
 	},
 	"image": {
 		"format": "png", // jpeg or png
-		"quality": 75	// only used for jpeg format
+		"quality": 75,	// only used for jpeg format
+		"renderDelay": 500
 	},
 	"auth": {
 		"enabled": false,
