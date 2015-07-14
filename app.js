@@ -72,7 +72,8 @@ app.get('/chart', function (req, res) {
             height: height,
           },
           streamType: config.get('image.format'),
-          quality: config.get('image.quality')
+          quality: config.get('image.quality'),
+          renderDelay: config.get('image.renderDelay')
         },
         function(err, renderStream) {
           if(err) {
